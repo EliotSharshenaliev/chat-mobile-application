@@ -1,0 +1,1 @@
+export const env = {BASE_API: "http://localhost:8000", ASYNC_STORAGE_KEY_OF_CREDENTIALS: "ieugfe13ef1325135"}

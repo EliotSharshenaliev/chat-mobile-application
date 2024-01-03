@@ -1,13 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
+import React from "react"
+import "react-native-gesture-handler"
+import { AuthProvider } from "./src/context/authContext";
+import { Navigators } from "./src/navigation/Navigators";
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+      <AuthProvider>
+        <Navigators/>
+      </AuthProvider>
+  )
 }
 
 const styles = StyleSheet.create({
